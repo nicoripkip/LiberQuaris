@@ -1,0 +1,67 @@
+# one (book) to many (persons) relation
+[BookAuthor]
+- BoekID
+- PersoonID
+
+
+# one (book) to many (genres) relation
+[BookGenre]
+- BoekID
+- GenreID
+
+
+# one (lenting) to many (books) relation
+[BookLenting]
+- BoekID
+- LentingID
+
+
+[Person]
+- Voornaam
+- Achternaam
+- Tussenvoegsel
+- Academische titel
+- Leeftijd
+- Adres
+- Woonplaats
+- Postcode
+- Email
+- Telefoonnummer
+
+
+[Book]
+- Titel
+- Omschrijving
+- Taal
+- Aantal bladzijdes
+- Uitgavedatum
+- Druk
+- UitgeverID
+
+
+[Genre]
+- Naam
+- Omschrijving
+
+
+[User]
+- Username
+- Wachtwoord
+- Email
+
+
+[Publisher]
+- Naam
+- Omschrijving
+- Adres
+- Postcode
+- Vestiging
+- Email
+
+
+[Lenting]
+- Uitleendatum
+- PersoonID
+- MaxUitleenAantal
+- MaxUitleenDuratie
+- Overtijd
